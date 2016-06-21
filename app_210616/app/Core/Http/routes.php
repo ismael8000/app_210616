@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return factory(\App\Domains\Users\User::class)->make();
 
 });
